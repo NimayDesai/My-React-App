@@ -1,3 +1,13 @@
+# INSTALL
+
+## Dependencies 
+### [NodeJS](https://nodejs.org/en/)
+### [Git](https://git-scm.com/)
+
+### `git clone https://github.com/PaladinAOE2/My-React-App.git`
+### `cd My-React-App`
+### `npm install`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
