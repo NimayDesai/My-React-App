@@ -13,6 +13,9 @@ const Navbar = () => {
             <a href="/medival-history" style={{
                 fontSize: 20
             }}>Medival History</a>
+            <a href="/early-modern-history" style={{
+                fontSize: 20
+            }}>Early Modern History</a>
             <div className="links">
                 <a href="https://github.com/" style={{
                     color: "white",
