@@ -1,7 +1,7 @@
 const Ads = () => {
     return (
         <div className="ads">
-            <h1>Free Cars Free Get your free car today!!!!1! 🤑🤑🤑</h1>
+            <h1>Free Cars Free Get your free car today!!!!1</h1>
             <h1>You could get this </h1>
             <h1>                   |</h1>
             <h1>                   |</h1>
