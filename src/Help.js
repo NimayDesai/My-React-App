@@ -6,7 +6,7 @@ const Help = () => {
             }}>About This Website</h1>
             <p style={{
                 fontSize: '20px'
-            }}>This website is a personal project to learn ReactJS and web dev. 
+            }}>This website is a personal project to learn ReactJS and web dev. The end product is going to be a histroy project 
                 A mobile port is planned using react 
                 native and will be it's own seperate github repo</p>
         </div>
