@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Privacy from './Privacy';
-
+import Help from './Help';
 
 function App() {
     return (
@@ -17,6 +17,9 @@ function App() {
                     </Route>
                     <Route path="/privacy">
                         <Privacy />
+                    </Route>
+                    <Route path="/help">
+                        <Help />
                     </Route>
                 </Switch>
             </div>
