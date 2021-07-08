@@ -17,7 +17,7 @@ const Navbar = () => {
                 fontSize: 20
             }}>Early Modern History</a>
             <div className="links">
-                <a href="https://github.com/" style={{
+                <a href="https://github.com/PaladinAOE2/My-React-App" style={{
                     color: "white",
                     backgroundColor: "#a3be8c",
                     borderRadius: '8px'
