@@ -4,6 +4,7 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Privacy from './Privacy';
 import Help from './Help';
+import NotFound from './NotFound';
 
 function App() {
     return (
@@ -20,6 +21,9 @@ function App() {
                     </Route>
                     <Route path="/help">
                         <Help />
+                    </Route>
+                    <Route path="*">
+                        <NotFound />
                     </Route>
                 </Switch>
             </div>
