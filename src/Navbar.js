@@ -1,31 +1,31 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <a href="/" style={{
+            <Link to="/" style={{
                 fontSize: 20
-            }}>Home</a>
-            <a href="/help" style={{
+            }}>Home</Link>
+            <Link to="/help" style={{
                 fontSize: 20
-            }}>Help</a>
-            <a href="/ancient-history" style={{
+            }}>Help</Link>
+            <Link to="/ancient-history" style={{
                 fontSize: 20
-            }}>Ancient History</a>
-            <a href="/medival-history" style={{
+            }}>Ancient History</Link>
+            <Link to="/medival-history" style={{
                 fontSize: 20
-            }}>Medival History</a>
-            <a href="/early-modern-history" style={{
+            }}>Medival History</Link>
+            <Link to="/early-modern-history" style={{
                 fontSize: 20
-            }}>Early Modern History</a>
+            }}>Early Modern History</Link>
             <div className="links">
-                <a href="https://github.com/PaladinAOE2/My-React-App" style={{
+                <Link to="https://github.com/PaladinAOE2/My-React-App" style={{
                     color: "white",
                     backgroundColor: "#a3be8c",
                     borderRadius: '8px'
-                }}>Source Code</a>
+                }}>Source Code</Link>
             </div>
         </nav>
     );
 }
 export default Navbar;
-
-
