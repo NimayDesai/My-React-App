@@ -1,4 +1,4 @@
-const CommentList = ({comments, title, handleDelete}) => {
+const CommentList = ({ comments, title }) => {
     return (
         <div className="comment-list">
             <h2>{title}</h2>
@@ -6,7 +6,6 @@ const CommentList = ({comments, title, handleDelete}) => {
                 <div className="comment-preview" key={comment.id}>
                     <h2>{comment.title}</h2>
                     <p>Written by: {comment.author}</p>
-                    <button onClick={() => handleDelete(comment.id)}>Delete Comment</button>
                 </div>
             ))}
         </div>

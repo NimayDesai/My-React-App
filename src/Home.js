@@ -1,21 +1,10 @@
 import {useState, useEffect} from 'react';
 import CommentList from './BlogList';
+import useFetch from './useFetch';
 
 const Home = () => {
-    const [comments, setComments] = useState([
-        {title: 'This website is not right!!! It is wrong!!! This is wrong !!!!!!', body: 'This  are wrong very very wrong!!!!!!!!', author: 'An angry commenter', id: 1},
-        {title: 'He is not wrong', body: 'He is not Wrong you are Wrong!!!', author: 'Another Angry Commenter', id: 2},
-        {title: 'No You are Wrong !!!!', body: 'comments 3', author: 'An angry commenter', id: 3}
-    ]);
+    const {data: comments, isPending, error} = useFetch('http://localhost:8000/blogs');
 
-    const handleDelete = (id) => {
-        const newComments = comments.filter(comment => comment.id !== id);
-        setComments(newComments);
-    }
-
-    useEffect(() => {
-        console.log('useEffect ran');
-    });
 
     return (
         <div className="home">
@@ -35,7 +24,9 @@ const Home = () => {
             <div className="early-modern">
                 <a href="/early-modern-history" className="testhistory">Early Modern History</a>
             </div>
-            <CommentList comments={comments} title="Comments" handleDelete={handleDelete} />
+            { error && <div>{ error }</div>}
+            { isPending && <div>Loading...</div>}
+            {comments && <CommentList comments={comments} title="Comments" />}
         </div>
     );
 }
