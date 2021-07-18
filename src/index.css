@@ -40,7 +40,7 @@
     margin-bottom: 50px;
     margin-top: 100px;
 }
-.home a {
+.main-content a {
     text-decoration: none;
     margin-bottom: 100px;
     margin-top: 100px;
@@ -87,4 +87,15 @@ img {
   color: #a3be8c;
   margin-bottom: 8px;
 }
- 
+.comment-preview a {
+  text-decoration: none;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #a3be8c;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}

@@ -8,21 +8,23 @@ const Home = () => {
 
     return (
         <div className="home">
-            <h2 className="mytitle">The Source of All History</h2>
+            <div className="main-content">
+                <h2 className="mytitle">The Source of All History</h2>
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg" alt="Pyramid" className="pyramid" />
-            <div>
-                <Link to="/ancient-history" style={{
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg" alt="Pyramid" className="pyramid" />
+                <div>
+                    <Link to="/ancient-history" style={{
 
-                }}>Ancient History</Link>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Saladin_and_Guy.jpg" alt="Third Crusade" />
-            <div>
-                <Link to="/medival-history">Medival History</Link>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Erstes_pr._Bataillon_Leibgarde_in_Schlacht_bei_Kollin.jpg" alt="7 years war" />
-            <div className="early-modern">
-                <Link to="/early-modern-history" className="testhistory">Early Modern History</Link>
+                    }}>Ancient History</Link>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Saladin_and_Guy.jpg" alt="Third Crusade" />
+                <div>
+                    <Link to="/medival-history">Medival History</Link>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Erstes_pr._Bataillon_Leibgarde_in_Schlacht_bei_Kollin.jpg" alt="7 years war" />
+                <div className="early-modern">
+                    <Link to="/early-modern-history" className="testhistory">Early Modern History</Link>
+                </div>
             </div>
             { error && <div>{ error }</div>}
             { isPending && <div>Loading...</div>}
