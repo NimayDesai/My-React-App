@@ -50,6 +50,17 @@
     padding: 6px;
     font-size: 20px;
 }
+
+.create-comment a {
+  text-decoration: none;
+  margin: 100px;
+  color: "white";
+  background-color: #a3be8c;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 20px;
+}
+
 button {
     text-decoration: none;
     color: "white";
@@ -59,6 +70,7 @@ button {
     font-size: 20px;
     display: flex;
     margin-left: auto;
+    margin-right: auto;
 }
 img {
     max-width: 50%;
@@ -67,7 +79,10 @@ img {
     width: auto;
 }
 .early-modern {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+}
+.create-comment {
+  margin-bottom: 50px;
 }
 
 /* blog previews / list */
@@ -98,4 +113,35 @@ img {
 }
 .blog-details div {
   margin: 20px 0;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #a3be8c;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #a3be8c;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }

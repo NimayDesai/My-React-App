@@ -25,6 +25,10 @@ const Home = () => {
                 <div className="early-modern">
                     <Link to="/early-modern-history" className="testhistory">Early Modern History</Link>
                 </div>
+                <div className="create-comment">
+                    <Link to="/create" className="testhistory">Create comment</Link>
+                </div>
+
             </div>
             { error && <div>{ error }</div>}
             { isPending && <div>Loading...</div>}
