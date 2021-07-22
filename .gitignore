@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 data/db.json
+
+src/Firebase.js
