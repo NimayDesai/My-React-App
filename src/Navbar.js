@@ -19,11 +19,11 @@ const Navbar = () => {
                 fontSize: 20
             }}>Early Modern History</Link>
             <div className="links">
-                <Link to="https://github.com/PaladinAOE2/My-React-App" style={{
+                <a href="https://github.com/PaladinAOE2/My-React-App" style={{
                     color: "white",
                     backgroundColor: "#a3be8c",
                     borderRadius: '8px'
-                }}>Source Code</Link>
+                }}>Source Code</a>
             </div>
         </nav>
     );
