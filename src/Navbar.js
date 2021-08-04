@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "./AuthContext";
+// import { auth } from "./Firebase";
+
 
 const Navbar = () => {
+    // const user = auth.currentUser;
+    const { currentUser, logout} = useAuth();
+
+    const handleLogout = async () => {
+        await logout();
+    }
+
     return (
         <nav className="navbar">
             <Link to="/" style={{
@@ -19,11 +29,16 @@ const Navbar = () => {
                 fontSize: 20
             }}>Early Modern History</Link>
             <div className="links">
-                <a href="https://github.com/PaladinAOE2/My-React-App" style={{
+                {!currentUser && <Link to="/login" style={{
                     color: "white",
                     backgroundColor: "#a3be8c",
-                    borderRadius: '8px'
-                }}>Source Code</a>
+                    borderRadius: '8px',
+                }}>Login</Link>}
+                {currentUser && <button onClick={handleLogout} style={{
+                    color: "white",
+                    backgroundColor: "#a3be8c",
+                    borderRadius: '8px',
+                }}>Log out</button>}
             </div>
         </nav>
     );
